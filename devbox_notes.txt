@@ -1,0 +1,13 @@
+TWITCH PYTHON EXPERIMENT
+------------------------------
+This project is all about x, y and z. With the goal
+being to develop a tool that goes to X, and delivers
+Y.
+## TODO:
+- Implement auth
+- Setup tests
+- Say hello to Chat 👋
+
+## Current Version:
+0.2.4
+------------------------------

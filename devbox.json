@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.10.6/.schema/devbox.schema.json",
+  "packages": [
+    "python@3.12.0",
+    "ripgrep@latest",
+    "php@7.2.32"
+  ],
+  "env" : {
+    "twitch_chat":"Research_DEV"
+
+  },
+  "shell": {
+    "init_hook": [
+      "export PS1='🟣 🦀 Twitch> '",
+      "file_contents=$(cat devbox_notes.txt)",
+      "alias dec2='aws ec2 describe-instances --filters \"Name=instance-state-name,Values=running\" \"Name=tag:aws:cloudformation:stack-name,Values=VisualVortex99Stack\" --query \"Reservations[].Instances[].[InstanceId, PublicIpAddress]\"'",
+      "alias vv99dl='aws s3 sync s3://visualvortex99-webassets/ .'",
+      "alias vv99up='aws s3 sync . s3://visualvortex99-webassets/'",
+      "alias vvconnect=\"aws ssm start-session --target $(sed 's/^\"//' <<< $(dec2 | jq '.[0][0]') | sed 's/\"$//')\"",
+      "alias vvtest=\"curl $(sed 's/^\"//' <<< $(dec2 | jq '.[0][1]') | sed 's/\"$//')\"",
+      "figlet Hello Twitch",
+      "echo 'Hello Twitch and Welcome to devbox!'",
+      "echo $file_contents"
+    ],
+    "scripts": {
+      "phpinfo" : "php -i",
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}
