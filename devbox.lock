@@ -1,12 +1,54 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "php@7.2.32": {
-      "last_modified": "2020-08-06T18:10:26Z",
+    "php@8.3.6": {
+      "last_modified": "2024-05-01T20:12:28Z",
       "plugin_version": "0.0.3",
-      "resolved": "github:NixOS/nixpkgs/a4e77ce9cff170dbb2e49be7c9442a76bf49950e#php72",
+      "resolved": "github:NixOS/nixpkgs/1c74cc292b61614e74c1cf0d372f79d57fb4936b#php83",
       "source": "devbox-search",
-      "version": "7.2.32"
+      "version": "8.3.6",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/yw9a99kwg6md4z3nk2nmazfrhwfj8rn7-php-with-extensions-8.3.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/yw9a99kwg6md4z3nk2nmazfrhwfj8rn7-php-with-extensions-8.3.6"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/szp4mpdp0srsb7hvzwhgk9knwpp5p8gs-php-with-extensions-8.3.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/szp4mpdp0srsb7hvzwhgk9knwpp5p8gs-php-with-extensions-8.3.6"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/sc7w2j7jc7zf5jbw8syckzc5vpxhhdvc-php-with-extensions-8.3.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/sc7w2j7jc7zf5jbw8syckzc5vpxhhdvc-php-with-extensions-8.3.6"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/5c8cmm95kys4333cca7jm01iv8na082s-php-with-extensions-8.3.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/5c8cmm95kys4333cca7jm01iv8na082s-php-with-extensions-8.3.6"
+        }
+      }
     },
     "python@3.12.0": {
       "last_modified": "2023-11-17T14:14:56Z",
